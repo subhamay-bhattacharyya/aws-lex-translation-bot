@@ -1,6 +1,8 @@
 AWSTemplateFormatVersion: '2010-09-09'
 
-Description: 'Root CloudFormation template for Lex Translation Bot. Creates the following resources - (1) AWS::S3::Bucket (logical ID S3Bucket) with versioning enabled and all public access blocked. Bucket name is {ProjectName}-{BucketBaseName}-{AccountId}-{environment}-{Region}, with an optional -{CiSuffix} appended. Outputs the bucket name and ARN.'
+Description: >-
+  Root CloudFormation template for the language translation bot using Amazon Lex. Creates the following resources:
+  - S3 bucket with versioning enabled and all public access blocked.
 
 Parameters:
   ProjectName:
